@@ -383,18 +383,20 @@ $(function() {
 	});
 
 	/* 16. Contact form */
-	$("#send_form").on('submit', function(){
+	$("#send_form").on('submit', function(e){
+		e.preventDefault(); // Prevent the normal submission of the form
+	
 		var first_name = $("#first_name").val().trim();
 		var last_name = $("#last_name").val().trim();
 		var email = $("#email").val().trim();
 		var message = $("#message").val().trim();
-
+	
 		$.ajax({
-			url: 'assets/ajax/mail.php',
+			url: '/send-contact-form', // Updated to use Laravel's routing
 			type: 'POST',
 			cache: false,
 			data: {'first_name': first_name, 'last_name': last_name, 'email': email, 'message': message},
-			dataType: 'html',
+			dataType: 'json', // Expecting JSON response
 			beforeSend: function() {
 				$("#send").addClass("js-active");
 			},

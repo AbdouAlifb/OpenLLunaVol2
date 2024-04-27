@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ContactController;
 
 
 // Home page
@@ -30,3 +31,7 @@ Route::get('/terms', [PagesController::class, 'terms'])->name('terms');
 
 // Privacy Policy page
 Route::get('/privacy', [PagesController::class, 'privacy'])->name('privacy');
+
+
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/send-contact-form', 'ContactController@store')->name('send.contact.form');

@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>XEN</title>
+        <title>Open lluna </title>
+		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
+
 
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
@@ -12,6 +14,66 @@
 		<!-- styles -->	
         <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+		
+		<style>
+			.success-animation { margin:150px auto;}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #4bb71b;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #4bb71b;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position:relative;
+    top: 5px;
+    right: 5px;
+   margin: 0 auto;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #4bb71b;
+    fill: #fff;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+ 
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+}
+		</style>
 	</head>
 	<body class="loader">
 		<!-- loading start -->
@@ -193,14 +255,14 @@
 				</li><!-- nav-box end -->
 			</ul><!-- nav-menu end -->
 		</nav><!-- nav-container end -->
-	    
+		
 		<!-- animsition-overlay start -->
 		<main class="animsition-overlay" data-animsition-overlay="true">
 			<!-- page-head start -->
 			<section id="up" class="page-head flex-min-height-box dark-bg-1">
 				<!-- page-head-bg -->
-				<div class="page-head-bg overlay-loading2" style="background-image: url(assets/images/backgrounds/double-exposure-2390185_1920.jpg);"></div>
-
+					<div class="page-head-bg overlay-loading2" style="background-image: url(assets/images/backgrounds/double-exposure-2390185_1920.jpg);"></div>
+							
 				<!-- flex-min-height-inner start -->
 	  			<div class="flex-min-height-inner">
 		  			<!-- flex-container start -->
@@ -310,7 +372,17 @@
 						<div class="container small top-bottom-padding-120 form-box">
 							<h4 class="small-title-oswald text-color-4 text-center">Lets Get In Touch!</h4>
 							<!-- flex-container start -->
-							<form class="flex-container top-padding-90" method="post" name="formobrsv" id="send_form">
+						
+							@if(session('success'))
+								<div class="success-animation">
+									<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+										<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+										<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+									</svg>
+								</div>
+							@endif
+							<form class="flex-container top-padding-90" method="POST" action="{{ route('contact.store') }}">
+    								@csrf
 								<!-- column start -->
 								<div class="four-columns">
 									<div class="content-right-margin-10 input-box">
@@ -346,7 +418,9 @@
 									    </span>
 									</button>
 								</div><!-- column end -->
+								
 							</form><!-- flex-container end -->
+						
 						</div><!-- container end -->
 
 						<!-- alert start -->
@@ -397,12 +471,12 @@
 				<div class="three-columns bottom-padding-60">
 					<div class="content-left-right-margin-10">
 						<ul class="footer-menu text-color-4">
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="index.html">Home</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="about.html">About</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="services.html">Services</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="portfolio.html">Portfolio</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="blog.html">Blog</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color active" href="contact.html">Contact</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color " href="{{route('home')}}">Home</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="{{route('about')}}">About</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="{{route('services')}}">Services</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="{{route('portfolio')}}">Portfolio</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="">Blog</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color active" href="{{route('contact')}}">Contact</a></li>
 						</ul>
 					</div>
 				</div><!-- column end -->
@@ -410,9 +484,9 @@
 				<div class="four-columns bottom-padding-60">
 					<div class="content-left-right-margin-10 footer-center-mobile">
 						<ul class="footer-information text-color-4">
-							<li><i class="far fa-envelope"></i><a href="#" class="xsmall-title-oswald">email@xen_agency.com</a></li>
-							<li><i class="fas fa-mobile-alt"></i><a href="#" class="xsmall-title-oswald">+23 8 8532 7834</a></li>
-							<li><i class="fas fa-map-marker-alt"></i><a href="#" class="xsmall-title-oswald text-height-17">PO Box 223158 Oliver Street<br><span>East Victoria 2006 UK</span></a></li>
+							<li><i class="far fa-envelope"></i><a href="#" class="xsmall-title-oswald">ali.abdoufb@gmail.com</a></li>
+							<li><i class="fas fa-mobile-alt"></i><a href="#" class="xsmall-title-oswald">+212 70812-9950</a></li>
+							<!-- <li><i class="fas fa-map-marker-alt"></i><a href="#" class="xsmall-title-oswald text-height-17">PO Box 223158 Oliver Street<br><span>East Victoria 2006 UK</span></a></li> -->
 						</ul>
 					</div>
 				</div><!-- column end -->
@@ -422,27 +496,18 @@
 						<ul class="footer-social">
 							<li>
 								<div class="flip-btn-box">
-									<a href="#" class="flip-btn pointer-small" data-text="Instagram">Instagram</a>
+									<a href="https://www.instagram.com/open.lluna/?hl=fr" class="flip-btn pointer-small" data-text="Instagram">Instagram</a>
 								</div>
 							</li>
-							<li>
+							<!-- <li>
 								<div class="flip-btn-box">
 									<a href="#" class="flip-btn pointer-small" data-text="Facebook">Facebook</a>
 								</div>
-							</li>
+							</li> -->
+								
 							<li>
 								<div class="flip-btn-box">
-									<a href="#" class="flip-btn pointer-small" data-text="Spotify">Spotify</a>
-								</div>
-							</li>
-							<li>
-								<div class="flip-btn-box">
-									<a href="#" class="flip-btn pointer-small" data-text="Vimeo">Vimeo</a>
-								</div>
-							</li>
-							<li>
-								<div class="flip-btn-box">
-									<a href="#" class="flip-btn pointer-small" data-text="Behance">Behance</a>
+									<a href="https://www.linkedin.com/company/openlluna/" class="flip-btn pointer-small" data-text="Behance">Linkedin</a>
 								</div>
 							</li>
 						</ul>
@@ -450,7 +515,7 @@
 				</div><!-- column end -->
 				<!-- column start -->
 				<div class="twelve-columns">
-					<p class="p-letter-style text-color-4 footer-copyright">&copy; Copyright 2019 XEN. Theme by <a href="#">Jinna Gik</a></p>
+					<p class="p-letter-style text-color-4 footer-copyright">&copy; Copyright 2024  <a href="www.openlluna.com">Open lluna </a></p>
 				</div><!-- column end -->
 			</div><!-- flex-container end -->
 		</footer><!-- footer end -->

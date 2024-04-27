@@ -217,11 +217,11 @@
 							  				<span class="slider-title-fill slider-tr-delay02" data-text="creative &">creative &</span><br>
 							  				<span class="slider-title-fill slider-tr-delay03" data-text="novation ideas">novation ideas</span>
 						  				</h2>
-						  				<p class="p-style-bold-up text-height-20 d-flex-wrap">
+						  				<!-- <p class="p-style-bold-up text-height-20 d-flex-wrap">
 										  	<span class="slider-title-fill slider-tr-delay04" data-text="XOXO fam brunch">XOXO fam brunch</span>
 										  	<span class="slider-title-fill slider-tr-delay05" data-text="retro intelligentsia">retro intelligentsia</span>
 										  	<span class="slider-title-fill slider-tr-delay06" data-text="live-edge vegan">live-edge vegan</span>
-									  	</p>
+									  	</p> -->
 									  	<div class="slider-fade slider-tr-delay07 top-margin-30">
 										  	<div class="border-btn-box border-btn-red pointer-large">
 												<div class="border-btn-inner">
