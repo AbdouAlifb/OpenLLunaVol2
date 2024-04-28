@@ -14,6 +14,8 @@ Route::get('/about', [PagesController::class, 'about'])->name('about');
 // Contact page
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 
+Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
+
 // Services page
 Route::get('/services', [PagesController::class, 'services'])->name('services');
 

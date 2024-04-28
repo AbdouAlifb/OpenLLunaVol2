@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
 
 		<title>Open lluna </title>
 		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
@@ -73,13 +74,13 @@
 			<ul class="nav-menu dark-bg-1">
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{ route('home') }}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Home">Home</span>
 					</a>
 					
 					<!-- dropdown start -->
 					<ul class="dropdown">
-						<li class="nav-box">
+						<!-- <li class="nav-box">
 							<a href="index.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Slider Home">Slider Home</span>
 							</a>
@@ -103,7 +104,7 @@
 							<a href="home_typewriter.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Typewriter">Typewriter</span>
 							</a>
-						</li>
+						</li> -->
 					</ul><!-- dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/pexels-photo-1806031.jpeg);"></div>
@@ -124,12 +125,12 @@
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{ route('portfolio') }}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Portfolio">Portfolio</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="portfolio.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Standard">Standard</span>
@@ -160,18 +161,18 @@
 								<span class="nav-btn" data-text="Single project">Single project</span>
 							</a>
 						</li>
-					</ul><!-- dropdown end -->
+					</ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/art-artistic-artsy-1988681.jpg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a   href="{{ route('blog') }}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Blog">Blog</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="blog.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Blog">Blog</span>
@@ -182,7 +183,7 @@
 								<span class="nav-btn" data-text="Single post">Single post</span>
 							</a>
 						</li>
-					</ul><!-- dropdown end -->
+					</ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/beautiful-black-close-up-1689731.jpg);"></div>
 				</li><!-- nav-box end -->
@@ -359,7 +360,7 @@
 						</a>
 					</div><!-- column end -->
 					<!-- column start -->
-					<div class="four-columns bottom-padding-60">
+					<!-- <div class="four-columns bottom-padding-60">
 						<a data-animation-container href="#" class="content-left-right-margin-10 hover-box pointer-large d-block">
 							<div data-animation-child class="overlay-anim-box2 overlay-dark-bg-1 team-img-box" data-animation="overlay-anim2">
 								<img class="hover-img" src="assets/images/team/4.jpg" alt="Balanchaev Balancha">
@@ -369,9 +370,9 @@
 								<p data-animation-child class="p-letter-style text-color-4 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">Manager</p>
 							</div>
 						</a>
-					</div><!-- column end -->
+					</div>column end -->
 					<!-- column start -->
-					<div class="four-columns bottom-padding-60">
+					<!-- <div class="four-columns bottom-padding-60">
 						<a data-animation-container href="#" class="content-left-margin-20 hover-box pointer-large d-block">
 							<div data-animation-child class="overlay-anim-box2 overlay-dark-bg-1 team-img-box" data-animation="overlay-anim2">
 								<img class="hover-img" src="assets/images/team/5.jpg" alt="Balanchaev Balancha">
@@ -381,7 +382,7 @@
 								<p data-animation-child class="p-letter-style text-color-4 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">web designer</p>
 							</div>
 						</a>
-					</div><!-- column end -->
+					</div>column end -->
 				</div><!-- flex-container end -->
 			</section><!-- section end -->
 			
@@ -413,7 +414,7 @@
 				<!-- about-slider start -->
 				<div class="about-slider bottom-padding-60">
 					<!-- swiper-wrapper start -->
-					<div class="swiper-wrapper">
+					<!-- <div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<img src="assets/images/about/adult-brainstorming-business-1437908.jpg" alt="about">
 						</div>
@@ -429,7 +430,7 @@
 						<div class="swiper-slide">
 							<img src="assets/images/about/hands-indoors-man-1204001.jpg" alt="about">
 						</div>
-					</div><!-- swiper-wrapper end -->
+					</div>swiper-wrapper end -->
 					
 					<!-- swiper-button-next start -->
 					<div class="swiper-button-next">

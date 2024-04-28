@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
 
         <title>Open lluna </title>
 		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
@@ -133,12 +134,12 @@
 			<ul class="nav-menu dark-bg-1">
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{ route('home') }}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Home">Home</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="index.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Slider Home">Slider Home</span>
@@ -164,7 +165,7 @@
 								<span class="nav-btn" data-text="Typewriter">Typewriter</span>
 							</a>
 						</li>
-					</ul><!-- dropdown end -->
+					</ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/pexels-photo-1806031.jpeg);"></div>
 				</li><!-- nav-box end -->
@@ -184,12 +185,12 @@
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{ route('portfolio') }}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Portfolio">Portfolio</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="portfolio.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Standard">Standard</span>
@@ -220,18 +221,18 @@
 								<span class="nav-btn" data-text="Single project">Single project</span>
 							</a>
 						</li>
-					</ul><!-- dropdown end -->
+					</ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/art-artistic-artsy-1988681.jpg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{ route('blog') }}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Blog">Blog</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="blog.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Blog">Blog</span>
@@ -242,7 +243,7 @@
 								<span class="nav-btn" data-text="Single post">Single post</span>
 							</a>
 						</li>
-					</ul><!-- dropdown end -->
+					</ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/beautiful-black-close-up-1689731.jpg);"></div>
 				</li><!-- nav-box end -->
@@ -276,9 +277,9 @@
 									<span class="load-title-fill tr-delay05" data-text="Your Businnes">Your Businnes</span>
 								</h2>
 								<p class="p-style-bold-up text-height-20 d-flex-wrap">
-									<span class="load-title-fill tr-delay08" data-text="XOXO fam brunch">XOXO fam brunch</span>
-									<span class="load-title-fill tr-delay09" data-text="retro intelligentsia">retro intelligentsia</span>
-									<span class="load-title-fill tr-delay10" data-text="live-edge vegan">live-edge vegan</span>
+									<span class="load-title-fill tr-delay08" data-text="XOXO fam brunch">Creative team</span>
+									<span class="load-title-fill tr-delay09" data-text="retro intelligentsia">Innovation ideas</span>
+									<span class="load-title-fill tr-delay10" data-text="live-edge vegan">Best services</span>
 								</p>
 				  			</div>
 			  			</div><!-- column end -->

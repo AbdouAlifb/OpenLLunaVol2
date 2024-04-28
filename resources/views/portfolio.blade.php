@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
 
-        <title>XEN</title>
+		<title>Open lluna </title>
+		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
 
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
@@ -36,7 +38,7 @@
 		    <!-- header-flex-box start -->
 			<div class="header-flex-box">
 			    <!-- logo start -->
-				<a href="index.html" class="logo pointer-large animsition-link">
+				<a href="{{route('home')}}" class="logo pointer-large animsition-link">
 					<div class="logo-img-box">
 				        <img class="logo-white" src="assets/images/logo/logo-white.png" alt="logo">
 				        <img class="logo-black" src="assets/images/logo/logo-black.png" alt="logo">
@@ -71,12 +73,12 @@
 			<ul class="nav-menu dark-bg-1">
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a href="{{route('home')}}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Home">Home</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="index.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Slider Home">Slider Home</span>
@@ -102,32 +104,32 @@
 								<span class="nav-btn" data-text="Typewriter">Typewriter</span>
 							</a>
 						</li>
-					</ul><!-- dropdown end -->
+					</ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/pexels-photo-1806031.jpeg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change">
-					<a href="about.html" class="animsition-link pointer-large nav-link">
+					<a href="{{route('about')}}" class="animsition-link pointer-large nav-link">
 						<span class="nav-btn" data-text="About">About</span>
 					</a>
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/adolescent-adult-diversity-1034361.jpg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change">
-					<a href="services.html" class="animsition-link pointer-large nav-link">
+					<a href="{{route('services')}}" class="animsition-link pointer-large nav-link">
 						<span class="nav-btn" data-text="Services">Services</span>
 					</a>
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/bald-casual-facial-hair-1708528.jpg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change active dropdown-open">
-					<a class="pointer-large nav-link">
+					<a href="{{route('portfolio')}}" class="pointer-large nav-link">
 						<span class="nav-btn active" data-text="Portfolio">Portfolio</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="portfolio.html" class="animsition-link pointer-large">
 								<span class="nav-btn active" data-text="Standard">Standard</span>
@@ -157,19 +159,20 @@
 							<a href="project.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Single project">Single project</span>
 							</a>
-						</li>
-					</ul><!-- dropdown end -->
+						</li> -->
+					<!-- </ul> -->
+					<!-- dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/art-artistic-artsy-1988681.jpg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{route('blog')}}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Blog">Blog</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="blog.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Blog">Blog</span>
@@ -180,13 +183,13 @@
 								<span class="nav-btn" data-text="Single post">Single post</span>
 							</a>
 						</li>
-					</ul><!-- dropdown end -->
+					</ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/beautiful-black-close-up-1689731.jpg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change">
-					<a href="contact.html" class="animsition-link pointer-large nav-link">
+					<a href="{{route('contact')}}" class="animsition-link pointer-large nav-link">
 						<span class="nav-btn" data-text="Contact">Contact</span>
 					</a>
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/double-exposure-2390185_1920.jpg);"></div>
@@ -207,18 +210,19 @@
 		  			<div class="container top-bottom-padding-120 flex-container response-999">
 			  			<!-- column start -->
 			  			<div class="six-columns six-offset">
-				  			<div class="content-left-margin-40">
-				  				<h2 class="large-title-bold">
-									<span class="load-title-fill tr-delay03" data-text="new approach">new approach</span><br>
-									<span class="load-title-fill tr-delay04" data-text="to design">to design</span><br>
-									<span class="load-title-fill tr-delay05" data-text="& marketing">& marketing</span>
+						  <div class="content-left-margin-40">
+								<h2 class="large-title-bold">
+									<span class="load-title-fill tr-delay03" data-text="Advanced Solutions"> Advanced Solutions</span><br>
+									<span class="load-title-fill tr-delay04" data-text="For Web & Mobile"> For Web & Mobile</span><br>
+									<span class="load-title-fill tr-delay05" data-text="Development"> Development</span>
 								</h2>
 								<p class="p-style-bold-up text-height-20 d-flex-wrap">
-									<span class="load-title-fill tr-delay08" data-text="XOXO fam brunch">XOXO fam brunch</span>
-									<span class="load-title-fill tr-delay09" data-text="retro intelligentsia">retro intelligentsia</span>
-									<span class="load-title-fill tr-delay10" data-text="live-edge vegan">live-edge vegan</span>
+									<span class="load-title-fill tr-delay08" data-text="Innovative Projects">Innovative Projects</span>
+									<span class="load-title-fill tr-delay09" data-text="Customized Services"> Customized Services</span>
+									<span class="load-title-fill tr-delay10" data-text="Global Impact"> Global Impact</span>
 								</p>
-				  			</div>
+							</div>
+
 			  			</div><!-- column end -->
 		  			</div><!-- flex-container end -->
 	  			</div><!-- flex-min-height-inner end -->
@@ -239,7 +243,7 @@
 				<!-- container start -->
 				<div data-animation-container class="container small bottom-padding-60 text-center">
 					<h2 data-animation-child class="large-title text-height-10 text-color-1 overlay-anim-box2" data-animation="overlay-anim2">Recent Works</h2><br>
-					<p data-animation-child class="fade-anim-box tr-delay02 text-color-1 xsmall-title-oswald top-margin-5" data-animation="fade-anim">We Offer Digital Solutions</p>
+					<p data-animation-child class="fade-anim-box tr-delay02 text-color-1 xsmall-title-oswald top-margin-5" data-animation="fade-anim">Our Expertise in Action</p>
 				</div><!-- container end -->
 				
 				<!-- bottom-padding-90 start -->
@@ -253,13 +257,19 @@
 								<!-- column start -->
 								<div data-animation-container class="six-columns">
 									<div class="content-right-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Commercial</span>
+										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Tech Showcase</span>
 										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Bushwick selfies</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">pork belly lyft</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">brooklyn messeng</span>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Industrial Engineering and</span><br>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">Machining Services</span><br>
+											<!-- <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">brooklyn messeng</span> -->
 										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Narwhal pop-up intelligentsia tbh pinterest, microdosing tilde cloud bread gochujang tattooed leggings cornhole 8-bit. Austin fam chia cold-pressed raw denim. Glossier drinking vinegar portland lo-fi, polaroid bespoke lomo. Banjo art party XOXO, fashion axe sustainable retro ethical gentrify.</p>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">
+										Our partnership with 2STM-Maroc led to the creation of a dynamic digital platform,
+										 showcasing their 30 years of excellence in the industrial field. Focused on precision machining and mechanical works, 
+										 2STM-Maroc combines traditional craftsmanship with modern technology, offering services in welding, machining of all steel types,
+										  and plastic materials. Our digital solution for them reflects their commitment to quality and their diverse industrial capabilities.
+										 Discover the synergy of experience and innovation at <a href="https://2stm-maroc.com/">2STM-Maroc.</a> 
+										</p>
 										
 										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
 											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
@@ -270,7 +280,7 @@
 								<!-- column start -->
 								<div class="six-columns top-padding-60">
 									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
-										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/pexels-photo-1619654.jpeg)"></div>
+										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/pexels-photo-1619654.jpg)"></div>
 									</a>
 								</div><!-- column end -->
 							</div><!-- flex-container end -->
@@ -295,14 +305,15 @@
 								<!-- column start -->
 								<div data-animation-container class="six-columns">
 									<div class="content-left-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Web design</span>
+										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">School Management System</span>
 										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">tumeric tumblr</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">gluten-free</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Man bun small</span>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Innovative Education Platform</span><br>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">Fashion School Automation</span><br>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Seamless Enrollment & Payment</span>
 										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Slow-carb green juice subway tile bicycle rights, fanny pack raclette palo santo put a bird on it mustache actually fam mumblecore iPhone. Iceland post-ironic health goth snackwave, mixtape synth four dollar toast sartorial. Health goth la croix vexillologist, before they sold out shabby chic.</p>
-										
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">
+										Developed a bespoke multi-school management system tailored for a prestigious fashion institute. The system streamlines the entire enrollment process, monthly fee management, and calendar scheduling, ensuring a smooth operation. Its advanced features include record-keeping, automated billing, and integrated communication tools, leading to enhanced administrative efficiency and elevated student engagement.
+										</p>										
 										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
 											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
 										</div>
@@ -325,13 +336,16 @@
 								<!-- column start -->
 								<div data-animation-container class="six-columns">
 									<div class="content-right-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Graphic Design</span>
+										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">E-commerce Solution</span>
 										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">batch kombucha</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">subway tile</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">salvia brooklyn</span>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Dynamic Product Management</span><br>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">All-in-One Dashboard</span><br>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Multi-Category Sales</span>
 										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Mlkshk YOLO wolf, leggings vinyl crucifix stumptown tousled. Pabst venmo gentrify deep v microdosing migas occupy master cleanse intelligentsia sartorial chia activated charcoal. Iceland small batch live-edge raclette roof party dreamcatcher austin pickled. Chillwave cronut messenger bag truffaut.</p>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">
+										We engineered a robust e-commerce system designed for seamless online retailing across multiple product categories. Equipped with a fully integrated admin dashboard, this platform empowers sellers with dynamic control over inventory, user management, product categorization, and analytics. The system is built for scale, offering streamlined operations and an optimized shopping experience to drive sales and user engagement.
+										
+									</p>
 										
 										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
 											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
@@ -351,165 +365,31 @@
 				</section><!-- bottom-padding-90 end -->
 				
 				<!-- bottom-padding-90 start -->
-				<section class="bottom-padding-90">
-					<!-- portfolio-content start -->
-					<div class="portfolio-content flex-min-height-box">
-						<!-- portfolio-content-inner start -->
-						<div class="portfolio-content-inner flex-min-height-inner">
-							<!-- flex-container start -->
-							<div class="flex-container reverse container small">
-								<!-- column start -->
-								<div class="six-columns top-padding-60">
-									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
-										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/chocolate-delicious-dessert-890500.jpg)"></div>
-									</a>
-								</div><!-- column end -->
-								<!-- column start -->
-								<div data-animation-container class="six-columns">
-									<div class="content-left-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Commercial</span>
-										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">organic activated</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">charcoal vape</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">viral ennui</span>
-										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Tote bag cornhole pork belly swag, cronut hoodie snackwave 90's messenger bag pour-over disrupt chartreuse. Vape ugh cardigan hell of. Vaporware umami master cleanse neutra, chartreuse flexitarian lo-fi selvage hella hoodie freegan gentrify. 8-bit air plant umami asymmetrical franzen semiotics before.</p>
-										
-										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
-											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
-										</div>
-										
-									</div>
-								</div><!-- column end -->
-							</div><!-- flex-container end -->
-						</div><!-- portfolio-content-inner end -->
-					</div><!-- portfolio-content end -->
-				</section><!-- bottom-padding-90 end -->
+				
 				
 				<!-- bottom-padding-90 start -->
-				<section class="bottom-padding-90">
-					<!-- portfolio-content start -->
-					<div class="portfolio-content flex-min-height-box">
-						<!-- portfolio-content-inner start -->
-						<div class="portfolio-content-inner flex-min-height-inner">
-							<!-- flex-container start -->
-							<div class="flex-container container small">
-								<!-- column start -->
-								<div data-animation-container class="six-columns">
-									<div class="content-right-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Branding</span>
-										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Bushwick selfies</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">pork belly lyft</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">brooklyn messeng</span>
-										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Narwhal pop-up intelligentsia tbh pinterest, microdosing tilde cloud bread gochujang tattooed leggings cornhole 8-bit. Austin fam chia cold-pressed raw denim. Glossier drinking vinegar portland lo-fi, polaroid bespoke lomo. Banjo art party XOXO, fashion axe sustainable retro ethical gentrify.</p>
-										
-										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
-											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
-										</div>
-										
-									</div>
-								</div><!-- column end -->
-								<!-- column start -->
-								<div class="six-columns top-padding-60">
-									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
-										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/adult-bulb-close-up-973506.jpg)"></div>
-									</a>
-								</div><!-- column end -->
-							</div><!-- flex-container end -->
-						</div><!-- portfolio-content-inner end -->
-					</div><!-- portfolio-content end -->
-				</section><!-- bottom-padding-90 end -->
 				
 				<!-- bottom-padding-90 start -->
-				<section class="bottom-padding-90">
-					<!-- portfolio-content start -->
-					<div class="portfolio-content flex-min-height-box">
-						<!-- portfolio-content-inner start -->
-						<div class="portfolio-content-inner flex-min-height-inner">
-							<!-- flex-container start -->
-							<div class="flex-container reverse container small">
-								<!-- column start -->
-								<div class="six-columns top-padding-60">
-									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
-										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/close-up-computer-control-1579240.jpg)"></div>
-									</a>
-								</div><!-- column end -->
-								<!-- column start -->
-								<div data-animation-container class="six-columns">
-									<div class="content-left-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Web design</span>
-										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">tumeric tumblr</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">gluten-free</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Man bun small</span>
-										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Slow-carb green juice subway tile bicycle rights, fanny pack raclette palo santo put a bird on it mustache actually fam mumblecore iPhone. Iceland post-ironic health goth snackwave, mixtape synth four dollar toast sartorial. Health goth la croix vexillologist, before they sold out shabby chic.</p>
-										
-										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
-											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
-										</div>
-										
-									</div>
-								</div><!-- column end -->
-							</div><!-- flex-container end -->
-						</div><!-- portfolio-content-inner end -->
-					</div><!-- portfolio-content end -->
-				</section><!-- bottom-padding-90 end -->
 				
 				<!-- bottom-padding-90 start -->
-				<section class="bottom-padding-90">
-					<!-- portfolio-content start -->
-					<div class="portfolio-content flex-min-height-box">
-						<!-- portfolio-content-inner start -->
-						<div class="portfolio-content-inner flex-min-height-inner">
-							<!-- flex-container start -->
-							<div class="flex-container container small">
-								<!-- column start -->
-								<div data-animation-container class="six-columns">
-									<div class="content-right-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Graphic Design</span>
-										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">batch kombucha</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">subway tile</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">salvia brooklyn</span>
-										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Mlkshk YOLO wolf, leggings vinyl crucifix stumptown tousled. Pabst venmo gentrify deep v microdosing migas occupy master cleanse intelligentsia sartorial chia activated charcoal. Iceland small batch live-edge raclette roof party dreamcatcher austin pickled. Chillwave cronut messenger bag truffaut.</p>
-										
-										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
-											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
-										</div>
-										
-									</div>
-								</div><!-- column end -->
-								<!-- column start -->
-								<div class="six-columns top-padding-60">
-									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
-										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/blades-footwear-hanging-914996.jpg)"></div>
-									</a>
-								</div><!-- column end -->
-							</div><!-- flex-container end -->
-						</div><!-- portfolio-content-inner end -->
-					</div><!-- portfolio-content end -->
-				</section><!-- bottom-padding-90 end -->
+				
 				
 				<!-- bottom-padding-90 start -->
-				<section class="bottom-padding-90">
+				<!-- <section class="bottom-padding-90"> -->
 					<!-- portfolio-content start -->
-					<div class="portfolio-content flex-min-height-box">
+					<!-- <div class="portfolio-content flex-min-height-box"> -->
 						<!-- portfolio-content-inner start -->
-						<div class="portfolio-content-inner flex-min-height-inner">
+						<!-- <div class="portfolio-content-inner flex-min-height-inner"> -->
 							<!-- flex-container start -->
-							<div class="flex-container reverse container small">
+							<!-- <div class="flex-container reverse container small"> -->
 								<!-- column start -->
-								<div class="six-columns top-padding-60">
-									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
-										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/buttons-console-dark-1637438.jpg)"></div>
-									</a>
-								</div><!-- column end -->
+								<!-- <div class="six-columns top-padding-60"> -->
+									<!-- <a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link"> -->
+										<!-- <div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/buttons-console-dark-1637438.jpg)"></div> -->
+									<!-- </a> -->
+								<!-- </div>column end -->
 								<!-- column start -->
-								<div data-animation-container class="six-columns">
+								<!-- <div data-animation-container class="six-columns">
 									<div class="content-left-margin-40">
 										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Branding</span>
 										<h3 class="title-style text-color-1">
@@ -523,13 +403,14 @@
 											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
 										</div>
 										
-									</div>
-								</div><!-- column end -->
-							</div><!-- flex-container end -->
-						</div><!-- portfolio-content-inner end -->
-					</div><!-- portfolio-content end -->
-				</section><!-- bottom-padding-90 end -->
-			</div><!-- light-bg-1 end -->
+									</div> -->
+								<!-- </div>column end -->
+							<!-- </div>flex-container end -->
+						<!-- </div>portfolio-content-inner end -->
+					<!-- </div>portfolio-content end -->
+				<!-- </section>bottom-padding-90 end -->
+			</div>
+			
 			
 			<div class="text-center top-bottom-padding-120 red-bg" data-midnight="black">	
 				<a href="#" class="pointer-large overlay-btn-box">
@@ -552,12 +433,12 @@
 				<div class="three-columns bottom-padding-60">
 					<div class="content-left-right-margin-10">
 						<ul class="footer-menu text-color-4">
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="index.html">Home</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="about.html">About</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="services.html">Services</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color active" href="portfolio.html">Portfolio</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="blog.html">Blog</a></li>
-							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="contact.html">Contact</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color " href="{{route('home')}}">Home</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="{{route('about')}}">About</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="{{route('services')}}">Services</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color active" href="{{route('portfolio')}}">Portfolio</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="">Blog</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="{{route('contact')}}">Contact</a></li>
 						</ul>
 					</div>
 				</div><!-- column end -->
@@ -565,9 +446,9 @@
 				<div class="four-columns bottom-padding-60">
 					<div class="content-left-right-margin-10 footer-center-mobile">
 						<ul class="footer-information text-color-4">
-							<li><i class="far fa-envelope"></i><a href="#" class="xsmall-title-oswald">email@xen_agency.com</a></li>
-							<li><i class="fas fa-mobile-alt"></i><a href="#" class="xsmall-title-oswald">+23 8 8532 7834</a></li>
-							<li><i class="fas fa-map-marker-alt"></i><a href="#" class="xsmall-title-oswald text-height-17">PO Box 223158 Oliver Street<br><span>East Victoria 2006 UK</span></a></li>
+							<li><i class="far fa-envelope"></i><a href="#" class="xsmall-title-oswald">ali.abdoufb@gmail.com</a></li>
+							<li><i class="fas fa-mobile-alt"></i><a href="#" class="xsmall-title-oswald">+212 70812-9950</a></li>
+							<!-- <li><i class="fas fa-map-marker-alt"></i><a href="#" class="xsmall-title-oswald text-height-17">PO Box 223158 Oliver Street<br><span>East Victoria 2006 UK</span></a></li> -->
 						</ul>
 					</div>
 				</div><!-- column end -->
@@ -577,27 +458,18 @@
 						<ul class="footer-social">
 							<li>
 								<div class="flip-btn-box">
-									<a href="#" class="flip-btn pointer-small" data-text="Instagram">Instagram</a>
+									<a href="https://www.instagram.com/open.lluna/?hl=fr" class="flip-btn pointer-small" data-text="Instagram">Instagram</a>
 								</div>
 							</li>
-							<li>
+							<!-- <li>
 								<div class="flip-btn-box">
 									<a href="#" class="flip-btn pointer-small" data-text="Facebook">Facebook</a>
 								</div>
-							</li>
+							</li> -->
+								
 							<li>
 								<div class="flip-btn-box">
-									<a href="#" class="flip-btn pointer-small" data-text="Spotify">Spotify</a>
-								</div>
-							</li>
-							<li>
-								<div class="flip-btn-box">
-									<a href="#" class="flip-btn pointer-small" data-text="Vimeo">Vimeo</a>
-								</div>
-							</li>
-							<li>
-								<div class="flip-btn-box">
-									<a href="#" class="flip-btn pointer-small" data-text="Behance">Behance</a>
+									<a href="https://www.linkedin.com/company/openlluna/" class="flip-btn pointer-small" data-text="Behance">Linkedin</a>
 								</div>
 							</li>
 						</ul>
@@ -605,7 +477,7 @@
 				</div><!-- column end -->
 				<!-- column start -->
 				<div class="twelve-columns">
-					<p class="p-letter-style text-color-4 footer-copyright">&copy; Copyright 2019 XEN. Theme by <a href="#">Jinna Gik</a></p>
+					<p class="p-letter-style text-color-4 footer-copyright">&copy; Copyright 2024  <a href="www.openlluna.com">Open lluna </a></p>
 				</div><!-- column end -->
 			</div><!-- flex-container end -->
 		</footer><!-- footer end -->

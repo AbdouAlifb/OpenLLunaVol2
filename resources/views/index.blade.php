@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+	<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -72,12 +73,12 @@
 			<ul class="nav-menu dark-bg-1">
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change active dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{ route('home') }}" class="pointer-large nav-link">
 						<span class="nav-btn active" data-text="Home">Home</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="index.html" class="animsition-link pointer-large">
 								<span class="nav-btn active" data-text="Slider Home">Slider Home</span>
@@ -102,8 +103,8 @@
 							<a href="home_typewriter.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Typewriter">Typewriter</span>
 							</a>
-						</li>
-					</ul><!-- dropdown end -->
+						</li> -->
+					<!-- </ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/pexels-photo-1806031.jpg);"></div>
 				</li><!-- nav-box end -->
@@ -123,12 +124,12 @@
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{ route('portfolio') }}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Portfolio">Portfolio</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
 							<a href="portfolio.html" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Standard">Standard</span>
@@ -159,29 +160,29 @@
 								<span class="nav-btn" data-text="Single project">Single project</span>
 							</a>
 						</li>
-					</ul><!-- dropdown end -->
+					</ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/art-artistic-artsy-1988681.jpg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
-					<a class="pointer-large nav-link">
+					<a  href="{{ route('blog') }}" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Blog">Blog</span>
 					</a>
 					
 					<!-- dropdown start -->
-					<ul class="dropdown">
+					<!-- <ul class="dropdown">
 						<li class="nav-box">
-							<a href="blog.html" class="animsition-link pointer-large">
+							<a href="{{ route('about') }}" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Blog">Blog</span>
 							</a>
-						</li>
-						<li class="nav-box">
-							<a href="single_post.html" class="animsition-link pointer-large">
+						</li> -->
+						<!-- <li class="nav-box">
+							<a href="#" class="animsition-link pointer-large">
 								<span class="nav-btn" data-text="Single post">Single post</span>
 							</a>
-						</li>
-					</ul><!-- dropdown end -->
+						</li> -->
+					<!-- </ul>dropdown end -->
 					
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/beautiful-black-close-up-1689731.jpg);"></div>
 				</li><!-- nav-box end -->
@@ -268,16 +269,17 @@
 					    <!-- slide-bg -->
 				      	<div class="slide-bg" style="background-image:url(assets/images/backgrounds/bart-simpson-casual-close-up-1813947copy1.jpg)"></div>
 				      	<!-- home-slider-content start -->
-					  	<div class="home-slider-content flex-min-height-inner red-bg">
+					  	<div class="home-slider-content flex-min-height-inner " style="background-color : #000444; ">
 						  	<!-- flex-container start -->
 					      	<div class="container top-bottom-padding-120 flex-container response-999">
 						      	<!-- column start -->
 						      	<div class="six-columns">
-							      	<h2 class="large-title-bold">
-						  				<span class="slider-title-fill slider-tr-delay01" data-text="We’r Provided">We’r Provided</span><br>
-						  				<span class="slider-title-fill slider-tr-delay02" data-text="Best Digital">Best Digital</span><br>
-						  				<span class="slider-title-fill slider-tr-delay03" data-text="Services">Services</span>
-					  				</h2>
+								  	<h2 class="large-title-bold">
+										<span class="slider-title-fill slider-tr-delay01" data-text="Empowering You">Empowering You</span><br>
+										<span class="slider-title-fill slider-tr-delay02" data-text="With Premier">With Premier</span><br>
+										<span class="slider-title-fill slider-tr-delay03" data-text="Digital Expertise">Digital Expertise</span>
+									</h2>
+
 								  	<div class="small-title-oswald text-height-20 d-flex-wrap top-margin-20">
 									  	<span class="slider-title-fill slider-tr-delay04 top-margin-10" data-text="Creative team">Creative team</span>
 									  	<span class="slider-title-fill slider-tr-delay05 top-margin-10" data-text="Innovation ideas">Innovation ideas</span>
@@ -391,7 +393,7 @@
 										 showcasing their 30 years of excellence in the industrial field. Focused on precision machining and mechanical works, 
 										 2STM-Maroc combines traditional craftsmanship with modern technology, offering services in welding, machining of all steel types,
 										  and plastic materials. Our digital solution for them reflects their commitment to quality and their diverse industrial capabilities.
-										 Discover the synergy of experience and innovation at 2STM-Maroc.
+										 Discover the synergy of experience and innovation at <a href="https://2stm-maroc.com/">2STM-Maroc.</a> 
 										</p>
 										
 										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
@@ -403,7 +405,7 @@
 								<!-- column start -->
 								<div class="six-columns top-padding-60">
 									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
-										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/pexels-photo-1619654.jpeg)"></div>
+										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/audio-cassette-cassette-tape-1626481.jpg)"></div>
 									</a>
 								</div><!-- column end -->
 							</div><!-- flex-container end -->
@@ -422,25 +424,28 @@
 								<!-- column start -->
 								<div class="six-columns top-padding-60">
 									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
-										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/audio-cassette-cassette-tape-1626481.jpg)"></div>
+										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/pexels-photo-1619654.jpg)"></div>
 									</a>
 								</div><!-- column end -->
 								<!-- column start -->
 								<div data-animation-container class="six-columns">
 									<div class="content-left-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Graphic Design</span>
+										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">School Management System</span>
 										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">tumeric tumblr</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">gluten-free</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Man bun small</span>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Innovative Education Platform</span><br>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">Fashion School Automation</span><br>
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Seamless Enrollment & Payment</span>
 										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Slow-carb green juice subway tile bicycle rights, fanny pack raclette palo santo put a bird on it mustache actually fam mumblecore iPhone. Iceland post-ironic health goth snackwave, mixtape synth four dollar toast sartorial. Health goth la croix vexillologist, before they sold out shabby chic.</p>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">
+											Developed a bespoke multi-school management system tailored for a prestigious fashion institute. The system streamlines the entire enrollment process, monthly fee management, and calendar scheduling, ensuring a smooth operation. Its advanced features include record-keeping, automated billing, and integrated communication tools, leading to enhanced administrative efficiency and elevated student engagement.
+										</p>
 										
 										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
 											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
 										</div>
 										
 									</div>
+
 								</div><!-- column end -->
 							</div><!-- flex-container end -->
 						</div><!-- portfolio-content-inner end -->
@@ -458,20 +463,23 @@
 								<!-- column start -->
 								<div data-animation-container class="six-columns">
 									<div class="content-right-margin-40">
-										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Branding</span>
+										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">E-commerce Solution</span>
 										<h3 class="title-style text-color-1">
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">batch kombucha</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">subway tile</span><br>
-											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">salvia brooklyn</span>
+										<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Dynamic Product Management</span><br>
+										<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">All-in-One Dashboard</span><br>
+										<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Multi-Category Sales</span>
 										</h3>
-										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Mlkshk YOLO wolf, leggings vinyl crucifix stumptown tousled. Pabst venmo gentrify deep v microdosing migas occupy master cleanse intelligentsia sartorial chia activated charcoal. Iceland small batch live-edge raclette roof party dreamcatcher austin pickled. Chillwave cronut messenger bag truffaut.</p>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">
+										We engineered a robust e-commerce system designed for seamless online retailing across multiple product categories. Equipped with a fully integrated admin dashboard, this platform empowers sellers with dynamic control over inventory, user management, product categorization, and analytics. The system is built for scale, offering streamlined operations and an optimized shopping experience to drive sales and user engagement.
+										</p>
 										
 										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
-											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
+										<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
 										</div>
 										
 									</div>
 								</div><!-- column end -->
+
 								<!-- column start -->
 								<div class="six-columns top-padding-60">
 									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
@@ -484,22 +492,22 @@
 				</div><!-- bottom-padding-90 end -->
 				
 				<!-- bottom-padding-90 start -->
-				<div class="bottom-padding-90">
+				<!-- <div class="bottom-padding-90"> -->
 					<!-- portfolio-content start -->
-					<div class="portfolio-content flex-min-height-box">
+					<!-- <div class="portfolio-content flex-min-height-box"> -->
 						<!-- portfolio-content-inner start -->
-						<div class="portfolio-content-inner flex-min-height-inner">
+						<!-- <div class="portfolio-content-inner flex-min-height-inner"> -->
 							<!-- flex-container start -->
-							<div class="flex-container reverse container small">
+							<!-- <div class="flex-container reverse container small"> -->
 								<!-- column start -->
-								<div class="six-columns top-padding-60">
+								<!-- <div class="six-columns top-padding-60">
 									<a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
 										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/chocolate-delicious-dessert-890500.jpg)"></div>
 									</a>
-								</div><!-- column end -->
+								</div>column end -->
 								<!-- column start -->
-								<div data-animation-container class="six-columns">
-									<div class="content-left-margin-40">
+								<!-- <div data-animation-container class="six-columns"> -->
+									<!-- <div class="content-left-margin-40">
 										<span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Web design</span>
 										<h3 class="title-style text-color-1">
 											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">organic activated</span><br>
@@ -512,12 +520,12 @@
 											<a href="project.html" class="arrow-btn pointer-large animsition-link">Read more</a>
 										</div>
 										
-									</div>
-								</div><!-- column end -->
-							</div><!-- flex-container end -->
-						</div><!-- portfolio-content-inner end -->
-					</div><!-- portfolio-content end -->
-				</div><!-- bottom-padding-90 end -->
+									</div> -->
+								<!-- </div>column end -->
+							<!-- </div>flex-container end -->
+						<!-- </div>portfolio-content-inner end -->
+					<!-- </div>portfolio-content end -->
+				<!-- </div>bottom-padding-90 end -->
 			</section><!-- section end -->
 			
 			<!-- section start -->
@@ -533,7 +541,7 @@
 					
 					<!-- client-list start -->
 					<ul class="client-list d-flex-wrap top-padding-60">
-						<li>
+						<!-- <li>
 							<a href="#" class="pointer-large d-block">
 								<div class="brand-box">
 									<img src="assets/images/clients/3eabc7ab-8bae-44f0-8389-0169389e38c2.png" alt="Brand" class="hover-opac-img">
@@ -596,7 +604,7 @@
 									<img src="assets/images/clients/6e63c653-6997-42c6-b788-28e9fb6d15b7.png" alt="Brand" class="opac-img">
 								</div>
 							</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="#" class="pointer-large d-block">
 								<div class="brand-box">
@@ -699,12 +707,13 @@
 			</div><!-- light-bg-2 end -->
 			
 			<!-- video-content-bg start -->
-			<div class="video-content-bg" style="background-image:url(assets/images/backgrounds/business-calligraphy-chinese-lanterns-1455969.jpg)">
+			<!-- <div class="video-content-bg" style="background-image:url(assets/images/backgrounds/business-calligraphy-chinese-lanterns-1455969.jpg)">
 				<div class="bg-overlay"></div>
 				<a href="https://www.youtube.com/watch?v=9TGlc0Fufgk" class="video-play-button popup-youtube pointer-large">
 					<span></span>
 				</a>
-			</div><!-- video-content-bg end -->
+			</div> -->
+			<!-- video-content-bg end -->
 			
 			<!-- latest-news start -->
 			<section class="latest-news top-padding-120 bottom-padding-30 light-bg-1" data-midnight="black">
@@ -721,7 +730,7 @@
 						<!-- column start -->
 						<div class="four-columns bottom-padding-90">
 							<article class="content-right-margin-20 light-bg-2" data-animation-container>
-								<a href="single_post.html" class="pointer-large animsition-link hover-box d-block">
+								<a href="{{route('blog')}}" class="pointer-large animsition-link hover-box d-block">
 									<div class="overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2">
 										<img class="hover-img" src="assets/images/blog/auto-automobile-automotive-358201.jpg" alt="blog img">
 									</div>
@@ -744,7 +753,7 @@
 			                            <li class="p-letter-style pointer-small hover-color"><a href="#">post formats</a></li>
 			                        </ul> -->
 		                            <div data-animation-child class="blog-autor-date top-margin-30 fade-anim-box tr-delay06 text-color-1" data-animation="fade-anim">
-		                            	<a class="xsmall-title-oswald pointer-small hover-color" href="#">Abdou Ali </a>
+		                            	<a class="xsmall-title-oswald pointer-small hover-color" href="#">abdou </a>
 										<a class="xsmall-title-oswald pointer-small hover-color" href="#">March 20, 2024</a>
 		                            </div>
 								</div>					
@@ -753,7 +762,7 @@
 						<!-- column start -->
 						<div class="four-columns bottom-padding-90">
 							<article class="content-left-right-margin-10 light-bg-2" data-animation-container>
-								<a href="single_post.html" class="pointer-large animsition-link hover-box d-block">
+								<a href="{{route('blog')}}" class="pointer-large animsition-link hover-box d-block">
 									<div class="overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2">
 										<img class="hover-img" src="assets/images/blog/bodypaint-female-girl-50595.jpg" alt="blog img">
 									</div>
@@ -776,7 +785,7 @@
 		                                <li class="p-letter-style pointer-small hover-color"><a href="#">post formats</a></li>
 		                            </ul> -->
 		                            <div data-animation-child class="blog-autor-date top-margin-30 fade-anim-box tr-delay06 text-color-1" data-animation="fade-anim">
-		                            	<a class="xsmall-title-oswald pointer-small hover-color" href="#">Mohammed Abdou </a>
+		                            	<a class="xsmall-title-oswald pointer-small hover-color" href="#">Mohammed </a>
 										<a class="xsmall-title-oswald pointer-small hover-color" href="#">Junuary  13, 2024</a>
 		                            </div>		
 								</div>						
@@ -785,7 +794,7 @@
 						<!-- column start -->
 						<div class="four-columns bottom-padding-90">
 							<article class="content-left-margin-20 light-bg-2" data-animation-container>
-								<a href="single_post.html" class="pointer-large animsition-link hover-box d-block">
+								<a href="{{route('blog')}}" class="pointer-large animsition-link hover-box d-block">
 									<div class="overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2">
 										<img class="hover-img" src="assets/images/blog/art-blur-close-up-1826029.jpg" alt="blog img">
 									</div>
@@ -808,7 +817,7 @@
 		                                <li class="p-letter-style pointer-small hover-color"><a href="#">post formats</a></li>
 		                            </ul> -->
 		                            <div data-animation-child class="blog-autor-date top-margin-30 fade-anim-box tr-delay06 text-color-1" data-animation="fade-anim">
-		                            	<a class="xsmall-title-oswald pointer-small hover-color" href="#">Abdellatif Abdou </a>
+		                            	<a class="xsmall-title-oswald pointer-small hover-color" href="#">Abdellatif </a>
 										<a class="xsmall-title-oswald pointer-small hover-color" href="#">December  10, 2023 </a>
 		                            </div>								
 								</div>
