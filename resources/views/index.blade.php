@@ -245,7 +245,7 @@
 						      	<!-- column start -->
 						      	<div class="six-columns six-offset">
 							      	<div class="content-left-margin-40">
-								      	<h2 class="slider-overlay2 medium-title red-color">Welcome Open lluna </h2>
+								      	<h2 class="slider-overlay2 medium-title red-color">Welcome to  Open lluna </h2>
 								      	<h3 class="large-title-bold text-color-4">
 							  				<span class="slider-overlay2 slider-tr-delay01">Best Solutions</span><br>
 							  				<span class="slider-overlay2 slider-tr-delay02">& ideas for</span><br>
