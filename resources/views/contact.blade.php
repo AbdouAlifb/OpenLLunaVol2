@@ -17,7 +17,19 @@
         <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
-		
+		<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6633ba281ec1082f04ea406e/1hst0ubmu';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 		<style>
 			.success-animation { margin:150px auto;}
 
@@ -308,7 +320,7 @@
 							<h2 class="large-title text-center">
 								<span data-animation-child class="title-fill" data-animation="title-fill-anim" data-text="Contact us">Contact us</span>
 							</h2>
-							<p data-animation-child class="p-style-small text-color-5 fade-anim-box tr-delay03" data-animation="fade-anim">Succulents mlkshk hammock jean shorts flexitarian chicharrones, skateboard 90's knausgaard heirloom sustainable fixie forage. Vegan cloud bread forage lyft, cornhole food truck salvia portland locavore mlkshk. Etsy synth taxidermy godard DIY, tote bag fingerstache.</p>
+							<!-- <p data-animation-child class="p-style-small text-color-5 fade-anim-box tr-delay03" data-animation="fade-anim">Succulents mlkshk hammock jean shorts flexitarian chicharrones, skateboard 90's knausgaard heirloom sustainable fixie forage. Vegan cloud bread forage lyft, cornhole food truck salvia portland locavore mlkshk. Etsy synth taxidermy godard DIY, tote bag fingerstache.</p> -->
 						</div>
 						
 						<!-- flex-container start -->
@@ -318,16 +330,16 @@
 								<div data-animation-container class="content-right-margin-20">
 									<p data-animation-child class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Email us</p>
 									<p class="title-style text-color-4">
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay01" data-animation="overlay-anim2">palo listicle</span><br>
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay02" data-animation="overlay-anim2">vape banjo</span><br>
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay03" data-animation="overlay-anim2">meditation</span>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay01" data-animation="overlay-anim2">Ali </span><br>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay02" data-animation="overlay-anim2">Abdou</span><br>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay03" data-animation="overlay-anim2">ceo</span>
 									</p>
 									<h6 data-animation-child class="flip-btn-box fade-anim-box tr-delay04" data-animation="fade-anim">
-										<a href="#" class="flip-btn pointer-large" data-text="email@xen_agency.com">email@xen_agency.com</a>
+										<a href="#" class="flip-btn pointer-large" data-text="ali.abdoufb@gmail.com">ali.abdoufb@gmail.com</a>
 									</h6>
-									<h6 data-animation-child class="flip-btn-box fade-anim-box tr-delay04" data-animation="fade-anim">
+									<!-- <h6 data-animation-child class="flip-btn-box fade-anim-box tr-delay04" data-animation="fade-anim">
 										<a href="#" class="flip-btn pointer-large" data-text="email@xen_job.com">email@xen_job.com</a>
-									</h6>
+									</h6> -->
 								</div>
 							</div><!-- column end -->
 							<!-- column start -->
@@ -335,9 +347,9 @@
 								<div data-animation-container class="content-left-right-margin-10">
 									<p data-animation-child class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Visit us</p>
 									<h6 class="title-style text-color-4">
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay01" data-animation="overlay-anim2">PO Box 223158</span><br>
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay02" data-animation="overlay-anim2">Oliver Street</span><br>
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay03" data-animation="overlay-anim2">Victoria 2006</span>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay01" data-animation="overlay-anim2">OP OUIRGANE,  </span><br>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay02" data-animation="overlay-anim2">192 Berradi II M'Hamid,</span><br>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay03" data-animation="overlay-anim2">Marrakesh</span>
 									</h6>
 									<div data-animation-child class="flip-btn-box fade-anim-box tr-delay04" data-animation="fade-anim">
 										<a href="#" class="flip-btn pointer-large" data-text="open in google maps">open in google maps</a>
@@ -349,12 +361,14 @@
 								<div data-animation-container class="content-left-margin-20">
 									<p data-animation-child class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">Call us</p>
 									<p class="title-style text-color-4">
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay01" data-animation="overlay-anim2">organic cred</span><br>
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay02" data-animation="overlay-anim2">Echo park DIY</span><br>
-										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay03" data-animation="overlay-anim2">hashtag irony</span>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay01" data-animation="overlay-anim2">Book a Meeting </span><br>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay02" data-animation="overlay-anim2">with our </span><br>
+										<span data-animation-child class="overlay-anim-box2 overlay-light-bg-1 tr-delay03" data-animation="overlay-anim2">MANAGER</span>
 									</p>
 									<h6 data-animation-child class="flip-btn-box fade-anim-box tr-delay04" data-animation="fade-anim">
-										<a href="#" class="flip-btn pointer-large" data-text="+23 8 8532 7834">+23 8 8532 7834</a>
+										<a href="#" class="flip-btn pointer-large" data-text="+212-708129950 ">+212-708129950 </a>
+									</h6><h6 data-animation-child class="flip-btn-box fade-anim-box tr-delay04" data-animation="fade-anim">
+										<a href="#" class="flip-btn pointer-large" data-text="+212-675888161">+212-675888161 </a>
 									</h6>
 								</div>
 							</div><!-- column end -->

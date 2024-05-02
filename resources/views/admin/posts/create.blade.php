@@ -25,6 +25,8 @@
             padding: 8px 16px;
         }
     </style>
+
+
 </head>
 <body>
     <nav class="navbar navbar-expand navbar-light">
@@ -42,37 +44,91 @@
     <div class="container">
         <h1 class="text-center my-4">Add New Post</h1>
         <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="mb-3">
-                <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title" required>
-            </div>
-            <div class="mb-3">
-                <label for="title" class="form-label">Author</label>
-                <input type="text" class="form-control" id="writer" name="writer" required>
-            </div>
-            <div class="mb-3">
-                <label for="title" class="form-label">Author Description</label>
-                <input type="text" class="form-control" id="description" name="description" required>
-            </div>
-            <div class="mb-3">
-                <label for="main_image" class="form-label">Main Image</label>
-                <input type="file" class="form-control" id="main_image" name="main_image" required>
-            </div>
-            <div class="mb-3">
-                <label for="quote" class="form-label">Quote</label>
-                <textarea class="form-control" id="quote" name="quote" rows="3" required></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="content" class="form-label">Content</label>
-                <textarea class="form-control" id="content" name="content" rows="5" required></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="sub_images" class="form-label">Sub Images</label>
-                <input type="file" class="form-control" id="sub_images" name="sub_images[]" multiple>
-            </div>
-            <button type="submit" class="btn btn-success">Submit</button>
-        </form> 
+    @csrf
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <div class="mb-3">
+        <label for="writer" class="form-label">Author</label>
+        <input type="text" class="form-control" id="writer" name="writer" required>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Author Description</label>
+        <input type="text" class="form-control" id="description" name="description" required>
+    </div>
+    <div class="mb-3">
+        <label for="main_image" class="form-label">Main Image</label>
+        <input type="file" class="form-control" id="main_image" name="main_image" required>
+    </div>
+    <div class="mb-3">
+        <label for="quote" class="form-label">Quote</label>
+        <textarea class="form-control" id="quote" name="quote" rows="3" required></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="sub_images" class="form-label">Sub Images</label>
+        <input type="file" class="form-control" id="sub_images" name="sub_images[]" multiple>
+    </div>
+
+    <!-- Dynamic Section Fields -->
+    <div id="sections">
+    <div class="section">
+        <div class="mb-3">
+            <label for="sections[0][title]" class="form-label">Section Title</label>
+            <input type="text" class="form-control" name="sections[0][title]">
+        </div>
+        <div class="mb-3">
+            <label for="sections[0][content]" class="form-label">Section Content</label>
+            <textarea class="form-control" name="sections[0][content]" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="sections[0][image]" class="form-label">Section Image</label>
+            <input type="file" class="form-control" name="sections[0][image]">
+        </div>
+    </div>
+
+    </div>
+
+    <button type="button" id="addSectionButton" class="btn btn-info">Add Another Section</button>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+<script>document.addEventListener('DOMContentLoaded', function() {
+    const addButton = document.getElementById('addSectionButton');
+    addButton.onclick = function() {
+        const container = document.getElementById('sections');
+        const currentSection = container.querySelector('.section:last-child');
+        const newSection = currentSection.cloneNode(true);
+        const sectionIndex = container.querySelectorAll('.section').length;
+
+        // Correctly update names and IDs
+        newSection.querySelectorAll('input, textarea').forEach(input => {
+            const nameParts = input.name.match(/^(.+?)\[(\d+)\]\[(.+?)\]$/);
+            if (nameParts) {
+                input.name = `${nameParts[1]}[${sectionIndex}][${nameParts[3]}]`;
+                input.id = `${nameParts[1]}_${sectionIndex}_${nameParts[3]}`;  // Ensure IDs are unique
+            }
+            // Reset values
+            if (input.type === 'file') {
+                input.value = '';  // Reset file input
+            } else {
+                input.value = '';  // Reset text and textarea inputs
+            }
+        });
+
+        // Update labels to match new input IDs for proper association
+        newSection.querySelectorAll('label').forEach(label => {
+            const forParts = label.htmlFor.match(/^(.+?)_(\d+)_(.+?)$/);
+            if (forParts) {
+                label.htmlFor = `${forParts[1]}_${sectionIndex}_${forParts[3]}`;
+            }
+        });
+
+        container.appendChild(newSection);
+    };
+});
+
+</script>
+
     </div>
 </body>
 </html>

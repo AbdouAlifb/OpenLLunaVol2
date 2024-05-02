@@ -263,7 +263,7 @@
 												<img src="{{ Storage::url($post->main_image) }}" alt="{{ $post->title }}">
 											</a>
 											<div class="recent-desc">
-												<a href="single_post.html?post_id={{ $post->id }}" class="xsmall-title-oswald text-color-4 pointer-large animsition-link">{{ $post->title }}</a>
+												<a href="{{ route('post.show', $post->id) }}" class="xsmall-title-oswald text-color-4 pointer-large animsition-link">{{ $post->title }}</a>
 												<div class="p-style-xsmall text-color-4 text-height-10 top-margin-5">{{ $post->created_at->format('F d, Y') }}</div>
 											</div>
 										</div><!-- recent-entry end -->

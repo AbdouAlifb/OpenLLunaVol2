@@ -4,7 +4,7 @@
 	<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Latest Insights & Articles | OpenLluna Blog</title>
+		<title>{{ $post->title }} | OpenLluna Blog</title>
 		<meta name="description" content="Stay updated with the latest trends in technology and development with the OpenLluna blog. Read our latest articles, insights, and expert opinions here.">
 		<link rel="icon" type="image/png" href="{{asset('assets/images/logo/ol.png')}}">
 
@@ -77,24 +77,22 @@
 						<span class="nav-btn" data-text="Home">Home</span>
 					</a>
 					
-					<!-- dropdown start -->
-					
-					
-					<div class="nav-bg" style="background-image: url({{asset('assets/images/backgrounds/pexels-photo-1806031.jpeg')}});"></div>
+					<div class="nav-bg" style="background-image: url('{{ asset('assets/images/backgrounds/pexels-photo-1806031.jpg') }}');"></div>
+
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change">
 					<a href="{{ route('about') }}" class="animsition-link pointer-large nav-link">
 						<span class="nav-btn" data-text="About">About</span>
 					</a>
-					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/adolescent-adult-diversity-1034361.jpg);"></div>
+					<div class="nav-bg" style="background-image: url('{{ asset('assets/images/backgrounds/adolescent-adult-diversity-1034361.jpg')}}');"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change">
 					<a href="{{ route('services') }}" class="animsition-link pointer-large nav-link">
 						<span class="nav-btn" data-text="Services">Services</span>
 					</a>
-					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/bald-casual-facial-hair-1708528.jpg);"></div>
+					<div class="nav-bg" style="background-image: url('{{ asset('assets/images/backgrounds/bald-casual-facial-hair-1708528.jpg')}}');"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change dropdown-open">
@@ -103,7 +101,7 @@
 					</a>
 					
 					
-					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/art-artistic-artsy-1988681.jpg);"></div>
+					<div class="nav-bg" style="background-image: url('{{ asset('assets/images/backgrounds/art-artistic-artsy-1988681.jpg')}}');"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change active dropdown-open">
@@ -113,14 +111,14 @@
 					
 					
 					
-					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/beautiful-black-close-up-1689731.jpg);"></div>
+					<div class="nav-bg" style="background-image: url('{{ asset('assets/images/backgrounds/beautiful-black-close-up-1689731.jpg')}}');"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change">
 					<a href="{{ route('contact') }}" class="animsition-link pointer-large nav-link">
 						<span class="nav-btn" data-text="Contact">Contact</span>
 					</a>
-					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/double-exposure-2390185_1920.jpg);"></div>
+					<div class="nav-bg" style="background-image:url('{{ asset('assets/images/backgrounds/double-exposure-2390185_1920.jpg')}}');"></div>
 				</li><!-- nav-box end -->
 			</ul><!-- nav-menu end -->
 		</nav><!-- nav-container end -->
@@ -130,7 +128,8 @@
 			<!-- page-head start -->
 			<section id="up" class="page-head flex-min-height-box dark-bg-2">
 				<!-- page-head-bg -->
-				<div class="page-head-bg overlay-loading2" style="background-image: url({{ asset('assets/images/blog/black-background-face-paint-group-2045035.jpg') }});"></div>				
+				<div class="page-head-bg overlay-loading2" style="background-image: url('{{ Storage::url($post->main_image) }}');"></div>
+
 				<!-- flex-min-height-inner start -->
 	  			<div class="flex-min-height-inner">
 		  			<!-- flex-container start -->
@@ -172,49 +171,48 @@
 					<div class="eight-columns">
 						<!-- single-post-content start -->
 						<div class="light-bg-2">
-							<a class="photo-popup pointer-zoom" href="{{ Storage::url($post->main_image) }}">
+							<!-- <a class="photo-popup pointer-zoom" href="{{ Storage::url($post->main_image) }}">
 								<img src="{{ Storage::url($post->main_image) }}" alt="title">
-							</a>
+							</a> -->
 							<!-- content-margin-block start -->
 							<div class="content-margin-block">
 								<!-- entry-content start -->
 								<article class="entry-content">
-								@php
-									// Assuming the content is a single string and you want to split it around the quote
-									$contentParts = explode($post->quote, $post->content);
+										<h2 class="title-style text-color-1 top-margin-30 text-center">{{ $post->title }}</h2>
 
-									// Function to replace semicolons with line breaks
-									function formatContent($content) {
-										return str_replace(';', ';<br>', $content);
-									}
-								@endphp
-								<h2 class="title-style text-color-1 top-margin-30 text-center">{{ $post->title }}</h2>
-									<!-- Content before the quote -->
-									@if(isset($contentParts[0]))
-										<p class="p-style-medium text-color-1">{!! formatContent($contentParts[0]) !!}</p>
-									@endif
-
-									<!-- Quote Section -->
-									<blockquote class="quote-content">
-										<p class="p-style-bold text-justify text-color-4">{{ $post->quote }}</p>
-									</blockquote>
-
-									<!-- Content after the quote -->
-									@if(isset($contentParts[1]))
-										<p class="p-style-medium text-color-1">{!! formatContent($contentParts[1]) !!}</p>
-									@endif
-
-									<!-- Image Gallery if exists -->
-									<div class="post-img-flex">
-										@foreach($post->sub_images as $image)
-											<a class="post-img-box photo-popup" href="{{ Storage::url($image) }}">
-												<div class="pointer-zoom">
-													<img src="{{ Storage::url($image) }}" alt="{{ $post->title }}">
-												</div>
-											</a>
+										<!-- Display each section with its content and possible image -->
+										@foreach($post->sections as $section)
+											<div class="section">
+												@if($section->title)
+													<h3 class="section-title">{{ $section->title }}</h3>
+												@endif
+												<p class="p-style-medium text-color-1">{!! nl2br(e($section->content)) !!}</p>
+												@if($section->image)
+													<div class="post-img-box">
+														<img src="{{ Storage::url($section->image) }}" alt="{{ $section->title }}" class="responsive-img">
+													</div>
+												@endif
+											</div>
+											<br>
 										@endforeach
-									</div>
-								</article>
+
+										<!-- Quote Section -->
+										<blockquote class="quote-content">
+											<p class="p-style-bold text-justify text-color-4">{{ $post->quote }}</p>
+										</blockquote>
+
+										<!-- Sub Images Gallery if exists -->
+										<div class="post-img-flex">
+											@foreach($post->sub_images as $image)
+												<a class="post-img-box photo-popup" href="{{ Storage::url($image) }}">
+													<div class="pointer-zoom">
+														<img src="{{ Storage::url($image) }}" alt="Additional image for {{ $post->title }}">
+													</div>
+												</a>
+											@endforeach
+										</div>
+									</article>
+
 
 									
 								<!-- post-share start -->
@@ -395,7 +393,7 @@
 				<!-- column start -->
 				<div class="two-columns bottom-padding-60">
 					<div class="content-right-margin-10 footer-center-mobile">
-						<img class="footer-logo" src="assets/images/logo/logo-white.png" alt="logo">
+						<img class="footer-logo" src="{{asset('assets/images/logo/logo-white.png')}}" alt="logo">
 					</div>
 				</div><!-- column end -->
 				<!-- column start -->
