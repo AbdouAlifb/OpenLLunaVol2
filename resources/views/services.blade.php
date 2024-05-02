@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
 
-		<title>Open lluna </title>
+		<title>Professional Web & Mobile Development Services | OpenLluna</title>
+		<meta name="description" content="Boost your business with OpenLluna's professional web and mobile development services. From initial design to final deployment, we cover it all. See how we can help!">
+
 		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
 
 		<!-- fonts -->

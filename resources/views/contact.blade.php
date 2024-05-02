@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
+		<title>Contact Us - Get in Touch with Our Experts | OpenLluna</title>
+		<meta name="description" content="Need assistance? Contact OpenLluna today for support or inquiries. Reach us via phone, email, or our convenient online form.">
 
-        <title>Open lluna </title>
 		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
 
 

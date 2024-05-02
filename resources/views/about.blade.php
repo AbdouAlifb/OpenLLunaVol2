@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
+		<title>About Us - Our Story & Team | OpenLluna</title>
+		<meta name="description" content="Learn about OpenLluna’s journey, mission, and the passionate team behind our innovative tech solutions. Get to know us better!">
 
-		<title>Open lluna </title>
 		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
 
 

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Latest Insights & Articles | OpenLluna Blog</title>
-		<meta name="description" content="Stay updated with the latest trends in technology and development with the OpenLluna blog. Read our latest articles, insights, and expert opinions here.">
+        <meta name="google-site-verification" content="KHFNdKTiytTFRFdafuPemcKDITXwEID6MuyFbuGcMKU" />
 
+        <title>Open lluna </title>
 		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
-
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
 		
@@ -166,188 +164,151 @@
 					</div>
 				 </a><!-- scroll-btn end -->
 			</section><!-- page-head end -->
-	
 
-			<!-- blog start -->
-			<div id="down" class="blog container bottom-padding-30 top-padding-120 light-bg-1" data-midnight="black">
+			<!-- single-post start -->
+			<div id="down" class="single-post container bottom-padding-30 top-padding-120 light-bg-1" data-midnight="black">
 				<!-- flex-container start -->
 				<div class="flex-container">
 					<!-- column start -->
-					<div class="eight-columns latest-news">
-						<!-- blog-entry start -->
-						@foreach ($posts as $post)
-						<article class="bottom-padding-90">
-							<div class="light-bg-2">
-								<a href="{{ route('post.show', $post->id) }}" class="pointer-large animsition-link hover-box d-block">
-									<div class="overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2">
-										<img class="hover-img" src="{{ Storage::url($post->main_image) }}" alt="blog img">
+					<div class="sixteen-columns">
+						<!-- single-post-content start -->
+						<div class="light-bg-2">
+							<a class="photo-popup pointer-zoom" href="assets/images/blog/bodypaint-female-girl-50595.jpg">
+								<img src="assets/images/blog/bodypaint-female-girl-50595.jpg" alt="title">
+							</a>
+							<!-- content-margin-block start -->
+							<div class="content-margin-block">
+								<!-- entry-content start -->
+								<article class="entry-content">
+                                    <p class="p-style-medium text-color-1">The advent of Artificial Intelligence (AI) is reshaping the landscape of web development and the broader tech industry, providing developers with powerful tools to enhance efficiency and innovation. AI technologies are not just transforming how sites are built but are also revolutionizing user interactions through personalized experiences.</p>
+                                    <p class="p-style-medium text-color-1">Developers are leveraging AI to automate mundane coding tasks, optimize search engine operations, and even predict user behavior, which in turn can lead to more engaging and user-focused websites. AI's ability to process large sets of data in real time allows for dynamic site adjustments and content personalization, shifting how developers approach website design and maintenance.</p>
+                                    <blockquote class="quote-content">
+                                        <p class="p-style-bold text-justify text-color-4">"AI is no longer just a tool but a foundational component in web development that offers a competitive edge in the digital marketplace."</p>
+                                    </blockquote>
+                                    <h2 class="title-style text-color-1 top-margin-30 text-center">AI's Role in Enhancing Web Capabilities</h2>
+                                    <p class="p-style-medium text-color-1">From intelligent chatbots that provide instant customer support to sophisticated algorithms that enhance backend operations, AI's integration into web development is creating more robust, scalable, and secure websites. These advancements are not only improving the technical abilities of websites but are also ensuring better security protocols through predictive algorithms and anomaly detection.</p>
+                                    <!-- post-img-flex start -->
+                                    <div class="post-img-flex">
+                                        <a class="post-img-box photo-popup" href="assets/images/blog/adult-art-artistic-1002237.jpg">
+                                            <div class="pointer-zoom">
+                                                <img src="assets/images/blog/adult-art-artistic-1002237.jpg" alt="AI in Web Development">
+                                            </div>
+                                        </a>
+                                        <a class="post-img-box photo-popup" href="assets/images/blog/abstract-art-bright-682025.jpg">
+                                            <div class="pointer-zoom">
+                                                <img src="assets/images/blog/abstract-art-bright-682025.jpg" alt="AI Personalizing Web Experience">
+                                            </div>
+                                        </a>
+                                        <a class="post-img-box photo-popup" href="assets/images/blog/art-dark-ethnic-1038041.jpg">
+                                            <div class="pointer-zoom">
+                                                <img src="assets/images/blog/art-dark-ethnic-1038041.jpg" alt="AI Optimizing Backend Operations">
+                                            </div>
+                                        </a>
+                                        <a class="post-img-box photo-popup" href="assets/images/blog/art-blooming-bouquet-1480523.jpg">
+                                            <div class="pointer-zoom">
+                                                <img src="assets/images/blog/art-blooming-bouquet-1480523.jpg" alt="AI Enhancing Security Protocols">
+                                            </div>
+                                        </a>
+                                    </div><!-- post-img-flex end -->
+                                    <p class="p-style-medium text-color-1">As AI continues to evolve, its impact on the web industry promises not only to enhance the role of developers but also to redefine the possibilities within the digital landscape, making it a pivotal time for innovation in web technology.</p>
+                                </article><!-- entry-content end -->
+
+									
+								<!-- post-share start -->
+								<div class="post-share">
+									<span class="xsmall-title-oswald text-color-2">share this article: </span>
+									<ul class="post-share-social text-color-1">
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-behance"></i></a></li>
+									</ul>
+								</div><!-- post-share end -->
+							</div><!-- content-margin-block end -->
+						</div><!-- single-post-content end -->
+							
+						<!-- post-prev-next start -->
+						<div class="top-padding-90 bottom-padding-30">
+							<h2 class="p-style-bold-up text-color-1">You might also like</h2>
+							<!-- flex-container start -->
+							<div class="flex-container response-999 top-margin-30">
+								<!-- column start -->
+								<div class="four-columns bottom-padding-60">
+									<div class="content-right-margin-20">
+										<a href="#" class="hover-box pointer-large animsition-link d-block light-bg-2">
+											<div class="hidden-box">
+												<img class="hover-img" src="assets/images/blog/auto-automobile-automotive-358201.jpg" alt="title">
+											</div>
+											<div class="content-padding-bottom-20 content-padding-l-r-20">
+												<h3 class="xsmall-title-oswald text-color-1 hover-content top-margin-20">Navigating the Future :AI's Role in Software Development</h3><br>
+												<div class="p-style-xsmall text-color-2 text-height-10 hover-content tr-delay01 top-margin-5">March 20, 2024</div>
+											</div>
+										</a>
 									</div>
-									<div class="content-padding-l-r-20" data-animation-container>
-										<h3 class="title-style text-color-1 top-margin-30 blog-title">
-											<span data-animation-child class="overlay-anim-box2 hover-content overlay-dark-bg-2" data-animation="overlay-anim2">{{ explode(' ', $post->title)[0] ?? '' }}</span><br>
-											<span data-animation-child class="overlay-anim-box2 hover-content overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">{{ explode(' ', $post->title)[1] ?? '' }}</span><br>
-											<span data-animation-child class="overlay-anim-box2 hover-content overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">{{ explode(' ', $post->title)[2] ?? '' }}</span>
-										</h3>
-										<p data-animation-child class="fade-anim-box hover-content tr-delay03 p-style-medium text-color-2" data-animation="fade-anim">
-											{{ Str::limit($post->content, 80, '...') }}
-										</p>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div class="four-columns bottom-padding-60">
+									<div class="content-left-right-margin-10">
+										<a href="#" class="hover-box pointer-large animsition-link d-block light-bg-2">
+											<div class="hidden-box">
+												<img class="hover-img" src="assets/images/blog/art-blur-close-up-1826029.jpg" alt="title">
+											</div>
+											<div class="content-padding-bottom-20 content-padding-l-r-20">
+												<h3 class="xsmall-title-oswald text-color-1 hover-content top-margin-20 ">The Rise of Automation :
+Revolutionizing Enterprise Operations</h3><br>
+												<div class="p-style-xsmall text-color-2 text-height-10 hover-content tr-delay01 top-margin-5">Junuary  13, 2024</div>
+											</div>
+										</a>
 									</div>
-								</a>
-								<div class="content-padding-l-r-20 content-padding-bottom-20" data-animation-container>
-									<div data-animation-child class="blog-autor-date top-margin-30 fade-anim-box tr-delay02 text-color-1" data-animation="fade-anim">
-										<a class="xsmall-title-oswald pointer-small hover-color" href="#">{{ $post->writer }}</a>
-										<a class="xsmall-title-oswald pointer-small hover-color" href="#">{{ $post->created_at->format('F d, Y') }}</a>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div class="four-columns bottom-padding-60">
+									<div class="content-left-margin-20">
+										<a href="#" class="hover-box pointer-large animsition-link d-block light-bg-2">
+											<div class="hidden-box">
+												<img class="hover-img" src="assets/images/blog/fashion-fashion-models-female-1300571.jpg" alt="title">
+											</div>
+											<div class="content-padding-bottom-20 content-padding-l-r-20">
+												<h3 class="xsmall-title-oswald text-color-1 hover-content top-margin-20 ">AI in Education:
+AI's Transformation of Teaching and Learning</h3><br>
+												<div class="p-style-xsmall text-color-2 text-height-10 hover-content tr-delay01 top-margin-5">December  10, 2023</div>
+											</div>
+										</a>
 									</div>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- post-prev-next end -->
+							
+						<!-- autor-bio start -->
+						<div class="light-bg-2 autor-bio">
+							<div class="content-margin-block autor-bio-flex">
+								<div class="autor-img">
+									<img src="assets/images/avatars/adolescent-beautiful-beauty-247878.jpg" alt="Author">
+								</div>
+								<div class="autor-bio-desc">
+									<h5 class="small-title-oswald text-color-1">Ali Abdou </h5>
+                                    <p class="p-style-small text-height-15 text-color-1">Ali, a seasoned computer science engineer, specializes in the transformative power of Artificial Intelligence. With a robust background in developing cutting-edge AI solutions, Ali explores the intersection of technology and practical application, driving innovation in the web industry. His expertise not only enhances digital experiences but also pioneers new ways to integrate AI into everyday tech landscapes.</p>
+
+									<ul class="autor-social text-color-1">
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-facebook"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-vimeo"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-youtube"></i></a></li>
+									</ul>
 								</div>
 							</div>
-						</article>
-						@endforeach
-<!-- blog-entry end -->
-						
-						
-						<!-- loading more btn start -->
-						<div class="bottom-padding-90 text-center">
-							<div class="arrow-btn-box">
-								<a href="#" class="arrow-btn pointer-large">Loading more</a>
-							</div>
-						</div><!-- loading more btn end -->
+						</div><!-- autor-bio end -->
+							
+						<!-- ccomments  -->
 					</div><!-- column end -->
 					<!-- column start -->
-					<aside class="four-columns bottom-padding-90">
-						<!-- sidebar start -->
-						<div class="sidebar content-left-margin-40 red-bg">
-							<!-- sidebar-box start -->
-							<div class="sidebar-box">
-								<!-- form search start -->
-								<div class="top-bottom-padding-90">
-									<form class="form-search">
-										<input type="text" class="search-control pointer-small" placeholder="Search...">
-										<button class="search-btn pointer-large" type="button"><i class="fas fa-search"></i></button>
-									</form>
-								</div><!-- form search end -->
-								
-								<!-- widget-categories start -->
-								<!-- <div class="widget-categories bottom-padding-90">
-									<h4 class="p-style-bold-up red-color">categories</h4>
-									<ul class="top-margin-30 red-color">
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Art (8)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Culture (14)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Design (46)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Production (21)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Management (34)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Illustration (4)</a>
-										</li>
-									</ul> -->
-								<!-- </div>widget-categories end -->
-							
-								<!-- recent posts start -->
-								<div class="bottom-padding-90">
-									<h4 class="p-style-bold-up red-color">recent posts</h4>
-									<!-- recent posts content start -->
-									<div class="top-margin-30">
-										<!-- recent-entry start -->
-										@foreach ($recentPosts as $post)
-										<div class="recent-entry">
-											<a href="{{ route('post.show', $post->id) }}" class="recent-entry-img-box pointer-large animsition-link">
-												<img src="{{ Storage::url($post->main_image) }}" alt="{{ $post->title }}">
-											</a>
-											<div class="recent-desc">
-												<a href="single_post.html?post_id={{ $post->id }}" class="xsmall-title-oswald text-color-4 pointer-large animsition-link">{{ $post->title }}</a>
-												<div class="p-style-xsmall text-color-4 text-height-10 top-margin-5">{{ $post->created_at->format('F d, Y') }}</div>
-											</div>
-										</div><!-- recent-entry end -->
-										@endforeach
-
-										
-									</div><!-- recent posts content end -->
-								</div><!-- recent posts end -->
-								
-								<!-- widget-tags start -->
-								<div class="widget-tags bottom-padding-90">
-								<h4 class="p-style-bold-up red-color">tag clouds</h4>
-								<ul class="d-flex-wrap top-margin-30 red-color">
-									<li>
-										<a href="#" class="pointer-small small-title-oswald">web development</a>
-									</li>
-									<li>
-										<a href="#" class="pointer-small small-title-oswald">mobile apps</a>
-									</li>
-									<li>
-										<a href="#" class="pointer-small small-title-oswald">e-commerce</a>
-									</li>
-									<li>
-										<a href="#" class="pointer-small small-title-oswald">AI solutions</a>
-									</li>
-									<li>
-										<a href="#" class="pointer-small small-title-oswald">enterprise software</a>
-									</li>
-									<li>
-										<a href="#" class="pointer-small small-title-oswald">cloud services</a>
-									</li>
-									<li>
-										<a href="#" class="pointer-small small-title-oswald">UX/UI design</a>
-									</li>
-									<li>
-										<a href="#" class="pointer-small small-title-oswald">tech innovation</a>
-									</li>
-								</ul>
-							</div>
-							<!-- widget-tags end -->
-								
-								<!-- widget-instagram start -->
-								<!-- <div class="widget-instagram bottom-padding-90">
-									<h4 class="p-style-bold-up red-color">Instagram</h4>
-									<ul class="d-flex-wrap top-margin-30">
-										<li>
-											<div class="hover-box hidden-box">
-												<a class="pointer-open d-block" href="#">
-													<img class="hover-img" src="assets/images/blog/pexels-photo-573298.jpeg" alt="instagram post">
-												</a>
-											</div>
-										</li>
-										<li>
-											<div class="hover-box hidden-box">
-												<a class="pointer-open d-block" href="#">
-													<img class="hover-img" src="assets/images/blog/pexels-photo-1334602.jpeg" alt="instagram post">
-												</a>
-											</div>
-										</li>
-										<li>
-											<div class="hover-box hidden-box">
-												<a class="pointer-open d-block" href="#">
-													<img class="hover-img" src="assets/images/blog/pexels-photo-1707728.jpeg" alt="instagram post">
-												</a>
-											</div>
-										</li>
-										<li>
-											<div class="hover-box hidden-box">
-												<a class="pointer-open d-block" href="#">
-													<img class="hover-img" src="assets/images/blog/pexels-photo-1670770.jpeg" alt="instagram post">
-												</a>
-											</div>
-										</li>
-									</ul>	 -->
-								<!-- </div>widget-instagram end -->
-							</div><!-- sidebar-box end -->
-						</div><!-- sidebar end -->
-					</aside><!-- column end -->
+					
 				</div><!-- flex-container end -->
-			</div><!-- blog end -->
+			</div><!-- single-post end -->
 		</main><!-- animsition-overlay end -->
 		
-		<!-- footer start -->
-		<footer class="footer dark-bg-1">
+<!-- footer start -->
+<footer class="footer dark-bg-1">
 			<!-- flex-container start -->
 			<div class="flex-container container top-bottom-padding-90">
 				<!-- column start -->
@@ -408,7 +369,6 @@
 				</div><!-- column end -->
 			</div><!-- flex-container end -->
 		</footer><!-- footer end -->
-		<!-- footer end -->
 		
 		<!-- scripts --> 
         <script src="assets/js/plugins.js"></script> 

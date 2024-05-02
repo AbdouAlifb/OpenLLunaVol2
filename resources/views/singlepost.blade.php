@@ -6,20 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Latest Insights & Articles | OpenLluna Blog</title>
 		<meta name="description" content="Stay updated with the latest trends in technology and development with the OpenLluna blog. Read our latest articles, insights, and expert opinions here.">
-
-		<link rel="icon" type="image/png" href="assets/images/logo/ol.png">
+		<link rel="icon" type="image/png" href="{{asset('assets/images/logo/ol.png')}}">
 
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
 		
 		<!-- styles -->	
-        <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="{{asset ('assets/css/plugins.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset ('assets/css/style.css')}}" rel="stylesheet" type="text/css">
 	</head>
 	<body class="loader">
 		<!-- loading start -->
 		<div class="loading">
-		    <img class="logo-loading" src="assets/images/logo/logo-loader.png" alt="logo">
+		    <img class="logo-loading" src="{{asset('assets/images/logo/logo-loader.png')}}" alt="logo">
 	    </div><!-- loading end -->
 	    
 		<!-- pointer start -->
@@ -41,8 +40,8 @@
 			    <!-- logo start -->
 				<a href="{{ route('home') }}" class="logo pointer-large animsition-link">
 					<div class="logo-img-box">
-				        <img class="logo-white" src="assets/images/logo/logo-white.png" alt="logo">
-				        <img class="logo-black" src="assets/images/logo/logo-black.png" alt="logo">
+				        <img class="logo-white" src="{{asset('assets/images/logo/logo-white.png')}}" alt="logo">
+				        <img class="logo-black" src="{{asset('assets/images/logo/logo-black.png')}}" alt="logo">
 			        </div>
 		        </a><!-- logo end -->
 		        
@@ -57,7 +56,7 @@
 		<nav class="nav-container dark-bg-1">
 			<!-- nav-logo start -->
 			<div class="nav-logo">
-				<img src="assets/images/logo/logo-white.png" alt="logo">
+				<img src="{{asset('assets/images/logo/logo-white.png')}}" alt="logo">
 			</div><!-- nav-logo end -->
 			
 			<!-- menu-close -->
@@ -81,7 +80,7 @@
 					<!-- dropdown start -->
 					
 					
-					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/pexels-photo-1806031.jpeg);"></div>
+					<div class="nav-bg" style="background-image: url({{asset('assets/images/backgrounds/pexels-photo-1806031.jpeg')}});"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change">
@@ -131,27 +130,25 @@
 			<!-- page-head start -->
 			<section id="up" class="page-head flex-min-height-box dark-bg-2">
 				<!-- page-head-bg -->
-				<div class="page-head-bg overlay-loading2" style="background-image: url(assets/images/blog/black-background-face-paint-group-2045035.jpg);"></div>
-				
+				<div class="page-head-bg overlay-loading2" style="background-image: url({{ asset('assets/images/blog/black-background-face-paint-group-2045035.jpg') }});"></div>				
 				<!-- flex-min-height-inner start -->
 	  			<div class="flex-min-height-inner">
 		  			<!-- flex-container start -->
 		  			<div class="container top-bottom-padding-120 flex-container response-999">
 			  			<!-- column start -->
 			  			<div class="six-columns six-offset">
-                          <div class="content-left-margin-40">
-                            <h2 class="large-title">
-                                <span class="load-title-fill tr-delay03" data-text="Latest Insights">Latest Insights</span><br>
-                                <span class="load-title-fill tr-delay04" data-text="in Tech & Innovation">in Tech & Innovation</span><br>
-                                <span class="load-title-fill tr-delay05" data-text="Trends and Analysis">Trends and Analysis</span>
-                            </h2>
-                            <div class="d-flex-wrap top-margin-20">
-                                <a class="small-title-oswald text-height-20 pointer-large load-title-fill tr-delay06 top-margin-10" href="#" data-text="In: Technology">In: Technology</a>
-                                <a class="small-title-oswald text-height-20 pointer-large load-title-fill tr-delay07 top-margin-10" href="#" data-text="By: Tech Editorial Team">By: Tech Editorial Team</a>
-                                <a class="small-title-oswald text-height-20 pointer-large load-title-fill tr-delay08 top-margin-10" href="#" data-text="Updated: 2024, April 26">Updated: 2024, April 26</a>
-                            </div>
-                        </div>
-
+				  			<div class="content-left-margin-40">
+				  				<h2 class="large-title">
+									<span class="load-title-fill tr-delay03" data-text="{{ explode(' ', $post->title)[0] ?? '' }}">{{ explode(' ', $post->title)[0] ?? '' }}</span><br>
+									<span class="load-title-fill tr-delay04" data-text="{{ explode(' ', $post->title)[1] ?? '' }}">{{ explode(' ', $post->title)[1] ?? '' }}</span><br>
+									<span class="load-title-fill tr-delay05" data-text="{{ explode(' ', $post->title)[2] ?? '' }}">{{ explode(' ', $post->title)[2] ?? '' }}</span>
+								</h2>
+								<div class="d-flex-wrap top-margin-20">
+									<a class="small-title-oswald text-height-20 pointer-large load-title-fill tr-delay06 top-margin-10" href="#" data-text="In: Technology">In: Technology </a>
+									<a class="small-title-oswald text-height-20 pointer-large load-title-fill tr-delay07 top-margin-10" href="#" data-text="By: {{ $post->writer }}">By: {{ $post->writer }}</a>
+									<a class="small-title-oswald text-height-20 pointer-large load-title-fill tr-delay08 top-margin-10" href="#" data-text="{{ $post->created_at->format('F d, Y') }}">{{ $post->created_at->format('F d, Y') }}</a>
+								</div>
+				  			</div>
 			  			</div><!-- column end -->
 		  			</div><!-- flex-container end -->
 	  			</div><!-- flex-min-height-inner end -->
@@ -166,51 +163,120 @@
 					</div>
 				 </a><!-- scroll-btn end -->
 			</section><!-- page-head end -->
-	
 
-			<!-- blog start -->
-			<div id="down" class="blog container bottom-padding-30 top-padding-120 light-bg-1" data-midnight="black">
+			<!-- single-post start -->
+			<div id="down" class="single-post container bottom-padding-30 top-padding-120 light-bg-1" data-midnight="black">
 				<!-- flex-container start -->
 				<div class="flex-container">
 					<!-- column start -->
-					<div class="eight-columns latest-news">
-						<!-- blog-entry start -->
-						@foreach ($posts as $post)
-						<article class="bottom-padding-90">
-							<div class="light-bg-2">
-								<a href="{{ route('post.show', $post->id) }}" class="pointer-large animsition-link hover-box d-block">
-									<div class="overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2">
-										<img class="hover-img" src="{{ Storage::url($post->main_image) }}" alt="blog img">
+					<div class="eight-columns">
+						<!-- single-post-content start -->
+						<div class="light-bg-2">
+							<a class="photo-popup pointer-zoom" href="{{ Storage::url($post->main_image) }}">
+								<img src="{{ Storage::url($post->main_image) }}" alt="title">
+							</a>
+							<!-- content-margin-block start -->
+							<div class="content-margin-block">
+								<!-- entry-content start -->
+								<article class="entry-content">
+								@php
+									// Assuming the content is a single string and you want to split it around the quote
+									$contentParts = explode($post->quote, $post->content);
+
+									// Function to replace semicolons with line breaks
+									function formatContent($content) {
+										return str_replace(';', ';<br>', $content);
+									}
+								@endphp
+								<h2 class="title-style text-color-1 top-margin-30 text-center">{{ $post->title }}</h2>
+									<!-- Content before the quote -->
+									@if(isset($contentParts[0]))
+										<p class="p-style-medium text-color-1">{!! formatContent($contentParts[0]) !!}</p>
+									@endif
+
+									<!-- Quote Section -->
+									<blockquote class="quote-content">
+										<p class="p-style-bold text-justify text-color-4">{{ $post->quote }}</p>
+									</blockquote>
+
+									<!-- Content after the quote -->
+									@if(isset($contentParts[1]))
+										<p class="p-style-medium text-color-1">{!! formatContent($contentParts[1]) !!}</p>
+									@endif
+
+									<!-- Image Gallery if exists -->
+									<div class="post-img-flex">
+										@foreach($post->sub_images as $image)
+											<a class="post-img-box photo-popup" href="{{ Storage::url($image) }}">
+												<div class="pointer-zoom">
+													<img src="{{ Storage::url($image) }}" alt="{{ $post->title }}">
+												</div>
+											</a>
+										@endforeach
 									</div>
-									<div class="content-padding-l-r-20" data-animation-container>
-										<h3 class="title-style text-color-1 top-margin-30 blog-title">
-											<span data-animation-child class="overlay-anim-box2 hover-content overlay-dark-bg-2" data-animation="overlay-anim2">{{ explode(' ', $post->title)[0] ?? '' }}</span><br>
-											<span data-animation-child class="overlay-anim-box2 hover-content overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">{{ explode(' ', $post->title)[1] ?? '' }}</span><br>
-											<span data-animation-child class="overlay-anim-box2 hover-content overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">{{ explode(' ', $post->title)[2] ?? '' }}</span>
-										</h3>
-										<p data-animation-child class="fade-anim-box hover-content tr-delay03 p-style-medium text-color-2" data-animation="fade-anim">
-											{{ Str::limit($post->content, 80, '...') }}
-										</p>
+								</article>
+
+									
+								<!-- post-share start -->
+								<div class="post-share">
+									<span class="xsmall-title-oswald text-color-2">share this article: </span>
+									<ul class="post-share-social text-color-1">
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-behance"></i></a></li>
+									</ul>
+								</div><!-- post-share end -->
+							</div><!-- content-margin-block end -->
+						</div><!-- single-post-content end -->
+							
+						<!-- post-prev-next start -->
+						<div class="top-padding-90 bottom-padding-30">
+							<h2 class="p-style-bold-up text-color-1">You might also like</h2>
+							<!-- flex-container start -->
+							<div class="flex-container response-999 top-margin-30">
+								<!-- column start -->
+								@foreach ($recentPosts as $post)
+
+								<div class="four-columns bottom-padding-60">
+
+									<div class="content-right-margin-20">
+										<a href="{{ route('post.show', $post->id) }}" class="hover-box pointer-large animsition-link d-block light-bg-2">
+											<div class="hidden-box">
+												<img class="hover-img" src="{{ Storage::url($post->main_image) }}" alt="{{ $post->title }}">
+											</div>
+											<div class="content-padding-bottom-20 content-padding-l-r-20">
+												<h3 class="xsmall-title-oswald text-color-1 hover-content top-margin-20">{{ $post->title }}</h3><br>
+												<div class="p-style-xsmall text-color-2 text-height-10 hover-content tr-delay01 top-margin-5">{{ $post->created_at->format('F d, Y') }}</div>
+											</div>
+										</a>
 									</div>
-								</a>
-								<div class="content-padding-l-r-20 content-padding-bottom-20" data-animation-container>
-									<div data-animation-child class="blog-autor-date top-margin-30 fade-anim-box tr-delay02 text-color-1" data-animation="fade-anim">
-										<a class="xsmall-title-oswald pointer-small hover-color" href="#">{{ $post->writer }}</a>
-										<a class="xsmall-title-oswald pointer-small hover-color" href="#">{{ $post->created_at->format('F d, Y') }}</a>
-									</div>
+
+								</div><!-- column end -->
+								@endforeach
+								
+							</div><!-- flex-container end -->
+						</div><!-- post-prev-next end -->
+							
+						<!-- autor-bio start -->
+						<div class="light-bg-2 autor-bio">
+							<div class="content-margin-block autor-bio-flex">
+								<!-- <div class="autor-img">
+									<img src="assets/images/avatars/adolescent-beautiful-beauty-247878.jpg" alt="Author">
+								</div> -->
+								<div class="autor-bio-desc">
+									<h5 class="small-title-oswald text-color-1">{{ $post->writer }}</h5>
+									<p class="p-style-small text-height-15 text-color-1">{{ $post->description }}</p>
+									<ul class="autor-social text-color-1">
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-facebook"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-vimeo"></i></a></li>
+										<li><a class="pointer-small hover-color" href="#"><i class="fab fa-youtube"></i></a></li>
+									</ul>
 								</div>
 							</div>
-						</article>
-						@endforeach
-<!-- blog-entry end -->
-						
-						
-						<!-- loading more btn start -->
-						<div class="bottom-padding-90 text-center">
-							<div class="arrow-btn-box">
-								<a href="#" class="arrow-btn pointer-large">Loading more</a>
-							</div>
-						</div><!-- loading more btn end -->
+						</div><!-- autor-bio end -->
+							
 					</div><!-- column end -->
 					<!-- column start -->
 					<aside class="four-columns bottom-padding-90">
@@ -226,36 +292,13 @@
 									</form>
 								</div><!-- form search end -->
 								
-								<!-- widget-categories start -->
-								<!-- <div class="widget-categories bottom-padding-90">
-									<h4 class="p-style-bold-up red-color">categories</h4>
-									<ul class="top-margin-30 red-color">
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Art (8)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Culture (14)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Design (46)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Production (21)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Management (34)</a>
-										</li>
-										<li>
-											<a href="#" class="pointer-small small-title-oswald">Illustration (4)</a>
-										</li>
-									</ul> -->
-								<!-- </div>widget-categories end -->
-							
+								
 								<!-- recent posts start -->
 								<div class="bottom-padding-90">
 									<h4 class="p-style-bold-up red-color">recent posts</h4>
 									<!-- recent posts content start -->
 									<div class="top-margin-30">
+										<!-- recent-entry start -->
 										<!-- recent-entry start -->
 										@foreach ($recentPosts as $post)
 										<div class="recent-entry">
@@ -268,15 +311,14 @@
 											</div>
 										</div><!-- recent-entry end -->
 										@endforeach
-
 										
 									</div><!-- recent posts content end -->
 								</div><!-- recent posts end -->
 								
 								<!-- widget-tags start -->
 								<div class="widget-tags bottom-padding-90">
-								<h4 class="p-style-bold-up red-color">tag clouds</h4>
-								<ul class="d-flex-wrap top-margin-30 red-color">
+									<h4 class="p-style-bold-up red-color">tag clouds</h4>
+									<ul class="d-flex-wrap top-margin-30 red-color">
 									<li>
 										<a href="#" class="pointer-small small-title-oswald">web development</a>
 									</li>
@@ -301,9 +343,8 @@
 									<li>
 										<a href="#" class="pointer-small small-title-oswald">tech innovation</a>
 									</li>
-								</ul>
-							</div>
-							<!-- widget-tags end -->
+									</ul>
+								</div><!-- widget-tags end -->
 								
 								<!-- widget-instagram start -->
 								<!-- <div class="widget-instagram bottom-padding-90">
@@ -326,25 +367,26 @@
 										<li>
 											<div class="hover-box hidden-box">
 												<a class="pointer-open d-block" href="#">
-													<img class="hover-img" src="assets/images/blog/pexels-photo-1707728.jpeg" alt="instagram post">
+													<img class="hover-img" src="{{asset('assets/images/blog/pexels-photo-1707728.jpeg')}}" alt="instagram post">
 												</a>
 											</div>
 										</li>
 										<li>
 											<div class="hover-box hidden-box">
 												<a class="pointer-open d-block" href="#">
-													<img class="hover-img" src="assets/images/blog/pexels-photo-1670770.jpeg" alt="instagram post">
+													<img class="hover-img" src="{{asset('assets/images/blog/pexels-photo-1670770.jpeg')}}" alt="instagram post">
 												</a>
 											</div>
 										</li>
 									</ul>	 -->
 								<!-- </div>widget-instagram end -->
-							</div><!-- sidebar-box end -->
+							<!-- </div>sidebar-box end -->
 						</div><!-- sidebar end -->
 					</aside><!-- column end -->
 				</div><!-- flex-container end -->
-			</div><!-- blog end -->
+			</div><!-- single-post end -->
 		</main><!-- animsition-overlay end -->
+		
 		
 		<!-- footer start -->
 		<footer class="footer dark-bg-1">
@@ -408,10 +450,8 @@
 				</div><!-- column end -->
 			</div><!-- flex-container end -->
 		</footer><!-- footer end -->
-		<!-- footer end -->
-		
 		<!-- scripts --> 
-        <script src="assets/js/plugins.js"></script> 
-        <script src="assets/js/main.js"></script>
+        <script src="{{asset('assets/js/plugins.js')}}"></script> 
+        <script src="{{asset('assets/js/main.js')}}"></script>
 	</body>
 </html>
