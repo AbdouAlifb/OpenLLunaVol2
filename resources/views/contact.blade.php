@@ -290,9 +290,9 @@ s0.parentNode.insertBefore(s1,s0);
 									<span class="load-title-fill tr-delay05" data-text="Your Businnes">Your Businnes</span>
 								</h2>
 								<p class="p-style-bold-up text-height-20 d-flex-wrap">
-									<span class="load-title-fill tr-delay08" data-text="XOXO fam brunch">Creative team</span>
-									<span class="load-title-fill tr-delay09" data-text="retro intelligentsia">Innovation ideas</span>
-									<span class="load-title-fill tr-delay10" data-text="live-edge vegan">Best services</span>
+									<span class="load-title-fill tr-delay08" data-text="Creative team">Creative team</span>
+									<span class="load-title-fill tr-delay09" data-text="Innovation ideas">Innovation ideas</span>
+									<span class="load-title-fill tr-delay10" data-text="Best services">Best services</span>
 								</p>
 				  			</div>
 			  			</div><!-- column end -->
